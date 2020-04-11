@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Home Care</title>
+</head>
+<body>
+    
+    <div class="hero">
+        <div class="from-box">
+            <div class="button-hose">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="log()" >Log in</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+
+            </div>
+            <div class="social-icons">
+                <img class="twitter" src="./images/twitter.png" alt="twitter">
+                <img  class="linkedin" src="./images/linkedin.png" alt="linkedin">
+            </div>
+            <form id="log" class="input-group">
+                    <input type="text" class="input-field" placeholder="user id" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="chech-box"> <span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Log in</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="user id" required>
+                <input type="email" class="input-field" placeholder="Email id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="chech-box"> <span>I agree to the term & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+           <a id="about" href="./register.html"> <h2>About This?</h2></a>
+        </div>
+
+    </div>
+
+    <script>
+        var x = document.getElementById("log");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        var z = document.getElementById("about");
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+            }
+            function log(){
+                 x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+            }
+
+
+    </script>
+</body>
+</html>
